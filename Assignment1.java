@@ -1,4 +1,5 @@
 // Import libraries here
+import java.util.Scanner;
 
 public class Assignment1 {
   public static void main(String[] args) {
@@ -10,12 +11,17 @@ System.out.println("  AAAAAAAAA     OO        OO");
 System.out.println(" AA       AA    OOO      OOO");
 System.out.println("AA         AA    OOOOOOOOOO");
 
+int temperature;
+int makeCel = (5 / 9);
+int consReduction = 32;
+int temp;
 Scanner scan = new Scanner(System.in);
 
 System.out.println("Enter a temperature in Fahrenheit:");
-int temperature = scan.nextLine(); // taking input
-float makeCel = (5.0/9.0);
-float temp = ((temperature - 32) * makeCel);
+temperature = scan.nextInt();
+temp = (temperature - consReduction) * makeCel;
 System.out.println(temp);
+scan.close();
+
   }
 }
