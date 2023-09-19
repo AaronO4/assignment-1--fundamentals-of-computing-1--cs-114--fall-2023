@@ -12,15 +12,17 @@ System.out.println(" AA       AA    OOO      OOO");
 System.out.println("AA         AA    OOOOOOOOOO");
 
 int temperature;
-int makeCel = (5 / 9);
+double makeCel = (.5556);
 int consReduction = 32;
-int temp;
+double temp;
+double tempFinal;
 Scanner scan = new Scanner(System.in);
 
 System.out.println("Enter a temperature in Fahrenheit:");
 temperature = scan.nextInt();
-temp = (temperature - consReduction) * makeCel;
-System.out.println(temp);
+temp = (temperature - consReduction);
+tempFinal = temp * makeCel;
+System.out.println(tempFinal);
 scan.close();
 
   }
