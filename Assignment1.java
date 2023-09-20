@@ -31,7 +31,10 @@ System.out.println((int)tempFinal);
 
 
 // put string assignment here
+System.out.println("Enter a five character string:");
 String fiveLetterString = scan.nextLine();
+
+
 
 scan.close(); // this goes at the very very end of scan functions.
 
