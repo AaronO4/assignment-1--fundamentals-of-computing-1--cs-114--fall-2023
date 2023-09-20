@@ -11,7 +11,7 @@ int consReduction = 32;
 double temp;
 double tempFinal;
 final int MAX = 16352; //16384 total, 32 subtracted from Min
-int faceValue;
+int diceRoller;
 
 //code starts here
 System.out.println("     AAA         OOOOOOOOOO");
@@ -36,8 +36,8 @@ String fiveLetterString = scan.nextLine();
 scan.close(); // this goes at the very very end of scan functions.
 
 //rolls dice
-  faceValue = (int)(Math.random() * MAX) + 32; 
-  System.out.println(faceValue);
+  diceRoller = (int)(Math.random() * MAX) + 32; 
+  System.out.println(diceRoller);
 
   }
 }
