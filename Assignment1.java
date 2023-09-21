@@ -10,6 +10,7 @@ double makeCel = (.556);
 int consReduction = 32;
 double temp;
 double tempFinal;
+String fiveLetterString;
 final int MAX = 16352; //16384 total, 32 subtracted from Min
 int diceRoller;
 
@@ -30,17 +31,19 @@ tempFinal = temp * makeCel;
 System.out.println((int)tempFinal);
 
 
-// put string assignment here
+// backwards string assignment here
+Scanner scan2 = new Scanner(System.in);
 System.out.println("Enter a five character string:");
-String fiveLetterString = scan.nextLine();
+fiveLetterString = scan2.nextLine();
 
-
-
+String reverse = new StringBuffer(fiveLetterString).reverse().toString();
+String reverseTrim = (reverse.substring(1, reverse.length() - 1));
+System.out.println(reverseTrim);
 scan.close(); // this goes at the very very end of scan functions.
 
 //rolls dice
-  diceRoller = (int)(Math.random() * MAX) + 32; 
-  System.out.println(diceRoller);
+diceRoller = (int)(Math.random() * MAX) + 32; 
+System.out.println(diceRoller);
 
-  }
-}
+   }
+ }
