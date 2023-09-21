@@ -45,5 +45,9 @@ scan.close(); // this goes at the very very end of scan functions.
 diceRoller = (int)(Math.random() * MAX) + 32; 
 System.out.println(diceRoller);
 
+//FINAL STEP
+System.out.println("Random number generated. Continuing...");
+System.out.println(((int)tempFinal) + reverseTrim + diceRoller);
+
    }
  }
