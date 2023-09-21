@@ -6,7 +6,7 @@ public class Assignment1 {
 
 //variable graveyard
 double temperature;
-double makeCel = (.556);
+double makeCel = (.5556);
 int consReduction = 32;
 double temp;
 double tempFinal;
@@ -22,14 +22,13 @@ System.out.println("  AAAAAAAAA     OO        OO");
 System.out.println(" AA       AA    OOO      OOO");
 System.out.println("AA         AA    OOOOOOOOOO");
 
+// turns F to C
 Scanner scan = new Scanner(System.in);
-
 System.out.println("Enter a temperature in Fahrenheit:");
 temperature = scan.nextInt();
 temp = (temperature - consReduction);
 tempFinal = temp * makeCel;
 System.out.println((int)tempFinal);
-
 
 // backwards string assignment here
 Scanner scan2 = new Scanner(System.in);
